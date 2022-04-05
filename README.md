@@ -1,1 +1,1 @@
-BELAJAR MEMBUAT MODE GELAP, LINK --> https://rusadi-0.github.io
+mode gelap --> https://rusadi-0.github.io/mode-gelap/
