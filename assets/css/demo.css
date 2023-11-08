@@ -1,0 +1,355 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+/* start css ku */
+/*  start style card seperti tombol  */
+
+.background-login{
+  background-image: url('../img/backgrounds/bg-login.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 1; /* Sesuaikan nilai opacity sesuai dengan tingkat transparansi yang Anda inginkan (0.0 - 1.0) */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(229,244,248, 0.77); /* Sesuaikan warna dan tingkat transparansi di sini */
+}
+
+
+#footerLink {
+  transition: font-size 0.2s ease;
+}
+
+#footerLink:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cardBotton {
+  /* border-radius: 6px; */
+  /* background: #F5F5F9; */
+  /* box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05); */
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+  0.3s box-shadow,
+  0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  /* padding: 14px; */
+  cursor: pointer;
+}
+
+.cardBotton:active{
+  background-color: #f5f5f9;
+  transform: translateY(5px);
+}
+.cardBotton:hover{
+  /* background: #696cff; */
+  transform: scale(1.05);
+   /* box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05); */
+}
+
+
+
+
+
+
+.bg-svg {
+  background: url("../img/illustrations/blob.svg");
+  background-size: cover;
+  filter: blur(5px);
+}
+
+.cardDash {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cardDash:hover {
+  background-color: #fcfcfc;
+}
+
+.cardDash:active {
+  background-color: #f5f5f9;
+  transform: translateY(5px);
+}
+
+.card-body {
+  transition: background-color 0.2s ease-in-out;
+}
+
+/*  end style card seperti tombol  */
+
+.hadi-text-cut {
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hh {
+  position: absolute;
+  opacity: 0;
+}
+
+.hhc {
+  opacity: 0;
+}
+
+.abs {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100%;
+  z-index: 9999;
+}
+.overText {
+  white-space: nowrap;
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.overTextCard {
+  white-space: nowrap;
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 780px) {
+  .removeNavCont {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .removeCont {
+    display: none;
+  }
+  .marginTop75 {
+    margin-top: 75px;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2), 0px -5px 6px rgba(0, 0, 0, 0.09);
+      border: 2px solid;
+    border-radius: 25px;
+  }
+  .bottom-nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  .bottom-nav .nav-link.active {
+    color: #696cff;
+  }
+  .bottom-nav .nav-link .icon {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  .bottom-nav .nav-link:hover .icon {
+    transform: scale(1.2);
+    color: #696cff;
+  }
+  .bottom-nav .nav-link.active .icon {
+    color: #696cff;
+    transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 320px) {
+  .hadi-topbar-cut {
+    white-space: nowrap;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 370px) {
+  .hadi-tgl-cut {
+    white-space: nowrap;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* end css ku */
+
+.menu .app-brand.demo {
+  height: 64px;
+  margin-top: 12px;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+  /* text-transform: lowercase; */
+}
+
+/* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed
+  .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu)
+  .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir="rtl"] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+/*loading*/
+#loadingers {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+    display: flex;
+  justify-content: center; /* Pusat secara horizontal */
+  align-items: center; /* Pusat secara vertikal */
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF; /* Ganti dengan warna yang Anda inginkan */
+  z-index: 9999;
+  opacity: 1; /* Opacity agar latar belakang menjadi semi-transparan */
+}
+
+.custom-loader {
+  position: absolute;
+  display: grid;
+  border:4px solid #0000;
+  border-radius: 50%;
+  border-color:#E4E4ED #0000;
+  animation: s6 1s infinite linear;
+}
+.custom-loader::before,
+.custom-loader::after {    
+  content:"";
+  grid-area: 1/1;
+  margin:2px;
+  border:inherit;
+  border-radius: 50%;
+}
+.custom-loader::before {
+  border-color:#0098B9 #0000;
+  animation:inherit; 
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.custom-loader::after {
+  margin:8px;
+}
+
+@keyframes s6 { 
+  100%{transform: rotate(1turn)}
+}
+
+/*card diseble*/
+.cardBottonDis{
+    opacity: 0.3;
+}

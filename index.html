@@ -1,3 +1,134 @@
-<script>
-    window.location.href ="https://www.linkedin.com/in/rusadi0";
-</script>
+<!DOCTYPE html>
+
+<html lang="en" class="light-style customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="./assets/" data-template="vertical-menu-template-free">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>
+          Selamat datang di Website Toko Noor
+        </title>
+
+  <meta name="description" content="" />
+<!-- untuk bisa cetak jika dekstop, jika smartphone langsung terdownload -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
+
+  <!-- animation.io -->
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+
+  <!-- animation welcome -->
+  <link href="./lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="./assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="./assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="./assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+  <!-- Page CSS -->
+  <!-- Page -->
+  <link rel="stylesheet" href="./assets/vendor/css/pages/page-auth.css" />
+  <!-- Helpers -->
+  <script src="./assets/vendor/js/helpers.js"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="./assets/js/config.js"></script>
+</head>
+
+<body>  <!-- Navbar & Hero Start -->
+  <div class=" position-relative p-0">
+      <nav class="navbar bg-white fixed-top navbar-expand-lg navbar-light mb-5">
+          <div class="container-xxl">
+              <a class="navbar-brand me-5" href="javascript:void(0)"><b><small style="font-size: 18px;">Toko </small><span class="text-primary" style="font-size: 23px;">Noor</span></b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon me-2"></span>
+              </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="me-4 nav-item ">
+                          <a class="nav-link  active text-primary fw-semibold" href="./">Home</a>
+                      </li>
+                      <!-- Dropdown with active item -->
+                      <div class="btn-group me-4 nav-item">
+                          <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Produk kami
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item " href="#"><i class='bx bx-cart'></i> Sembako</a></li>
+                              <li><a class="dropdown-item " href="#"><img width="16" height="16" src="./assets/img/icons/mosque.png" alt=""> Kubah Mesjid</a></li>
+                              <li><a class="dropdown-item " href="#"><i class='bx bx-globe'></i> Jasa Bikin Website</a></li>
+                          </ul>
+                      </div>
+                      <li class="me-4 nav-item">
+                          <a class="disabled nav-link " href="./tamu/documentation">Kontak kami</a>
+                      </li>
+                  </ul>
+                  <div class="d-flex justify-content-between">
+                          <button class="btn btn-primary" onclick="window.location.href = `http://localhost/login`"><i class='bx bx-log-in'></i> Masuk</button>
+                  </div>
+              </div>
+          </div>
+      </nav>
+  </div>  <!-- Content -->
+
+  <div class="background-login">
+    <div class="container-xxl ">
+      <div class="pt-0 authentication-wrapper authentication-basic container-p-y">
+        <div class="" style="width: 500px;z-index:99;">
+          <div class="card shadow-none" style="background-color: rgba(0, 0, 0, 0);">
+            <h1 class="mt-5 text-center text-dark display-1 mt-3"><strong>SEGERA HADIR</strong></h1>
+            <p class="text-dark text-center">Website dengan memberikan informasi lengkap tentang produk kami, termasuk deskripsi, harga, dan detail spesifikasi.</p>
+            <p class="text-dark text-center">hubungi lebih lanjut :</p>
+            <div class="d-grid gap-2 d-flex justify-content-center">
+              <a href="https://wa.me/6285210013995" target="blank" style="background-color: #25d366;" class="border-0 btn btn-success rounded-pill"><i class='bx bxl-whatsapp'></i> Whatsapp</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+  <!-- / Content --><!-- Core JS -->
+
+<!-- ja_me -->
+<script src="./assets/js/js_me/script.js"></script>
+
+<!-- build:js assets/vendor/js/core.js -->
+<script src="./assets/vendor/libs/jquery/jquery.js"></script>
+<script src="./assets/vendor/libs/popper/popper.js"></script>
+<script src="./assets/vendor/js/bootstrap.js"></script>
+<script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+<script src="./assets/vendor/js/menu.js"></script>
+<!-- endbuild -->
+
+<!-- Vendors JS -->
+
+<!-- Main JS -->
+<script src="./assets/js/main.js"></script>
+
+<!-- Page JS -->
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+
+</body>
+
+</html>
